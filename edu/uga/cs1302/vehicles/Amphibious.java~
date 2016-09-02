@@ -1,0 +1,39 @@
+package edu.uga.cs1302.vehicles;
+
+public class Amphibious extends Vehicle {
+    public int noPassengers;
+    public int topSpeed;
+    public String name;
+    public String manufacturer;
+    public int year;
+
+    public Amphibious (int noPassengers, int topSpeed, String name, 
+		       String manufacturer, int year) {
+	if(noPassengers < 0)
+	    this.noPassengers = 0;
+	else
+	    this.noPassengers = noPassengers;
+
+	if(topSpeed < 0)
+	    this.topSpeed = 0;
+	else
+	    this.topSpeed;
+
+	if(name.equals(null))
+	    this.name = "None given.";
+	else
+	    this.name = name;
+
+	if(manufacturer.equals(null))
+	    this.manufacturer = "None given.";
+	else
+	    this.manufacturer = manufacturer;
+
+	if(year > 2014)
+	    this.year = 2014;
+	else
+	    this.year = year;
+
+	instanceCount++;
+    }
+}

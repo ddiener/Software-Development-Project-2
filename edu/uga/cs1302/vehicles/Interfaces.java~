@@ -1,0 +1,27 @@
+package edu.uga.cs1302.vehicles;
+
+public interface Moveable {
+    public int getNoPassengers();
+    public void setNoPassengers(int noPassengers);
+    public int getTopSpeed();
+    public vod setTopSpeed(int topSpeed);
+}
+
+public interface Flyable {
+    public int getMaxAltitude();
+    public void setMaxAltitude(int maxAltitude);
+    public int getMaxRange();
+    public void setMaxRange(int maxRange);
+}
+
+public interface Floatable {
+    public int getTonnage();
+    public void setTonnage(int tonnage);
+}
+
+public abstract class Vehicle implements Movable {
+    public String name;
+    public String manufacturer;
+    public int year;
+    public static int instnaceCount;
+}
